@@ -5,7 +5,9 @@
 
 **Авторы:** Посысаев Иван Сергеевич, Шульга Георгий.
 
-**Репозиторий:** <https://github.com/gvibco/antishema> (private)
+**Сайт:** <https://gvibco.github.io/antishema-site/>  
+**Репозиторий:** <https://github.com/gvibco/antishema> (private)  
+**Публичная сборка для хостинга:** <https://github.com/gvibco/antishema-site>
 
 ## Быстрый запуск
 
@@ -60,6 +62,16 @@ node --test tests/engine.test.js tests/scenarios.test.js
 
 Проверяются подсчёт очков, завершение игры, уровни результата и целостность
 сценариев.
+
+## Хостинг
+
+Сайт опубликован бесплатно на GitHub Pages:
+
+<https://gvibco.github.io/antishema-site/>
+
+Основной репозиторий с презентацией, тестами и документацией остаётся
+приватным. Для бесплатного GitHub Pages используется отдельный публичный
+репозиторий `antishema-site`, в котором лежит только готовая статическая версия сайта.
 
 ## Скриншоты
 
