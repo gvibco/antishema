@@ -1,11 +1,13 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
 const scenarios = require('../js/scenarios.js');
 const { validateScenarios } = require('../js/engine.js');
 
-test('в наборе не меньше пяти сценариев', () => {
+test('в наборе десять сценариев', () => {
   assert.ok(Array.isArray(scenarios));
-  assert.ok(scenarios.length >= 5);
+  assert.equal(scenarios.length, 10);
 });
 
 test('присутствуют оба типа заданий', () => {
@@ -38,4 +40,10 @@ test('в распознавании есть и безопасное, и мош�
   );
   assert.ok(correctLabels.some((label) => label === 'Безопасно'));
   assert.ok(correctLabels.some((label) => label === 'Похоже на мошенничество'));
+});
+
+test('страница правил содержит 12 правил', () => {
+  const html = fs.readFileSync(path.join(__dirname, '..', 'rules.html'), 'utf8');
+  assert.equal((html.match(/class="rule-card"/g) || []).length, 12);
+  assert.ok(html.includes('Если уже обманули'));
 });
