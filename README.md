@@ -6,7 +6,7 @@
 **Авторы:** Посысаев Иван Сергеевич, Шульга Георгий.
 
 **Сайт:** <https://gvibco.github.io/antishema-site/>  
-**Репозиторий:** <https://github.com/gvibco/antishema> (private)  
+**Репозиторий:** <https://github.com/gvibco/antishema> (public)  
 **Публичная сборка для хостинга:** <https://github.com/gvibco/antishema-site>
 
 ## Быстрый запуск
